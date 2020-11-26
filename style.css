@@ -40,6 +40,9 @@ html {
     margin: 0;
     padding:0;
 }
+.page-body {
+    background: #F8F8F8; 
+}
 .page-body__one {
     font-family: 'TTLakes', sans-serif;
     color: #1B1C21;
@@ -77,9 +80,6 @@ html {
     align-items: center;
     justify-content: space-around;
     column-gap: 15px;  
-}
-.rate {
-    background: #F8F8F8;
 }
 .services {
     display: flex;
