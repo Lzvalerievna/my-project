@@ -39,10 +39,14 @@ html {
 .page-body {
     margin: 0;
     padding:0;
-  
+}
+.page-body__one {
     font-family: 'TTLakes', sans-serif;
     color: #1B1C21;
     overflow-x: hidden;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 .header {
     width: 100%;
@@ -75,7 +79,7 @@ html {
     column-gap: 15px;  
 }
 .rate {
-    height: 540px;
+    height: 510px;
     background: #F8F8F8;
 }
 .services {
@@ -223,9 +227,6 @@ html {
 .services-list {
     padding-top: 10px;
 } 
- .rate {
-     margin: 0 20px;
- }
  .about {
      margin-top: -20px
  }
