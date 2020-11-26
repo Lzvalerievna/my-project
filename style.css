@@ -149,7 +149,7 @@ html {
 }
 
 @media (min-width: 768px) {
-.menu-centerright {
+.menu-center-right {
     display: flex;
     align-items: center;
     justify-content: space-between;
