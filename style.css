@@ -120,12 +120,13 @@ html {
     text-decoration: none;
     white-space: nowrap;
     color:#7E7E82;  
-    font-weight: 400;
+    font-weight: 500;
 }
 .services__item_active {
     text-decoration: none;
     white-space: nowrap;
     color:#7E7E82;
+    font-weight: 500;
     height: 30px;
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
