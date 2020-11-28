@@ -152,9 +152,10 @@ html {
     font-weight: 600;
 }
 .exstension__sign {
-    background: url(img/icon.png) ;
+    background-image: url(img/icon.png) ;
     padding: 5px 4px;
     margin-left: 30px;
+    margin-top: 18px;
 }
 .picture {
     margin-top: 20px;
