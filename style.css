@@ -96,6 +96,7 @@ html  {
 .services-title {
     font-size: 28px;
     padding-left: 20px;
+
     
 
     background: url(img/highlight.svg) no-repeat;
@@ -114,7 +115,7 @@ li {
 .services-list__item {
     display: inline-block;
     text-decoration: none;
-    padding: 6px 17px;
+    padding: 10px 17px;
     color:#7E7E82;  
     font-weight: 500;
 }
@@ -139,7 +140,7 @@ li {
     font-size: 14px;
     line-height: 18px; 
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .exstension {
     display:inline-block;
@@ -245,10 +246,14 @@ li {
 .menu-right {
     display: none;
 }
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42px;
+}
 .menu-right-button {
     display: flex;
-    padding-top: 40px;
-    padding-left: 700px;
 }
 .menu-button-repair {
     font-family: 'TTLakes';
@@ -273,17 +278,15 @@ li {
     font-size: 16px;
     font-weight: 500;
     border: none;
-
     background: url(img/repair.svg) no-repeat 140px 0px;
-}
-.services-title {
-    padding-top: 40px;
 }
 .services-list {
     white-space: normal;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 .services-list__item {
-    padding-bottom: 20px;
+    margin-top: 0px;
 }
 .inform-about {
     margin-top: 0px;
