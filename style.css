@@ -96,9 +96,7 @@ html  {
 .services-title {
     font-size: 28px;
     padding-left: 20px;
-
-    
-
+    margin-top: 20px;
     background: url(img/highlight.svg) no-repeat;
 }
 li {
@@ -108,11 +106,11 @@ li {
 .services-list {
     max-width: 1120px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     white-space: nowrap;
-    padding-left: 0;
-    margin: 0px 20px;
+    padding: 10px 0px 10px 20px;
     overflow: auto;
+ 
 }
 .services-list__item {
     display: inline-block;
@@ -250,43 +248,44 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 42px;
+    margin-top: 40px;
 }
 .menu-right-button {
     display: flex;
+    margin-right: 15px;
 }
 .menu-button-repair {
     font-family: 'TTLakes';
     color: #1B1C21;
     font-size: 16px;
     font-weight: 500;
-    padding: 10px 60px 12px 10px;
+    padding: 10px 50px 12px 20px;
     white-space: nowrap;
     font-size: 16px;
     font-weight: 500;
     border: none;
 
-    background: url(img/checkstatus.svg) no-repeat 145px 0px;
+    background: url(img/checkstatus.svg) no-repeat right 0px;
 }
 .menu-button-check { 
     font-family: 'TTLakes';
     color: #1B1C21;
     font-size: 16px;
     font-weight: 500;
-    padding: 10px 60px 12px 10px;
+    padding: 10px 50px 12px 20px;
     white-space: nowrap;
     font-size: 16px;
     font-weight: 500;
     border: none;
-    background: url(img/repair.svg) no-repeat 140px 0px;
+    background: url(img/repair.svg) no-repeat right 0px;
 }
 .services-list {
     white-space: normal;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: -20px;
+    margin-bottom: 0px;
 }
 .services-list__item {
-    margin-top: 0px;
+    margin-top: 10px;
 }
 .inform-about {
     margin-top: 0px;
