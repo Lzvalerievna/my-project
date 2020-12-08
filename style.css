@@ -47,10 +47,6 @@ a {
     margin-top: 23px;
     margin-right: 17px;
 }
-.header-icon-close:hover {
-    filter: contrast(2) brightness(2);
-    transform: scale(1.1);
-}
 .header-logo {
     background: url("img/group.png") no-repeat;
     width: 100px;
@@ -63,10 +59,6 @@ a {
     height: 40px;
     margin-top: 23px;
     margin-left: 75px;
-}
-.header-icon-search:hover {
-    filter: contrast(2) brightness(2);
-    transform: scale(1.1);
 }
 .sidebar-list {
     list-style: none;
@@ -106,25 +98,22 @@ a {
     width: 40px;
     height: 40px;
 } 
-.footer-icon-call:hover {
-    filter: contrast(2) brightness(2);
-    transform: scale(1.1);
-}
 .footer-icon-chat {
     background: url("img/chat.svg") no-repeat; 
     width: 40px;
     height: 40px;
 }
-.footer-icon-chat:hover {
-    filter: contrast(2) brightness(2);
-    transform: scale(1.1);
-}
+
 .footer-icon-profile {
     background: url("img/profile.svg") no-repeat; 
     width: 40px;
     height: 40px;
 }
-.footer-icon-profile:hover {
+.footer-icon-profile:hover,
+.footer-icon-chat:hover,
+.header-icon-search:hover,
+.header-icon-close:hover,
+.footer-icon-call:hover {
     filter: contrast(2) brightness(2);
     transform: scale(1.1);
 }
@@ -136,18 +125,12 @@ a {
     margin-top: 16px;
     margin-left: 24px;
 }
-.contacts-mail:hover {
-    color: red;
-}
 .contacts-phone {
     display: block;
     font-size: 24px;
     font-weight: 700;
     margin-top: 12px;
     margin-left: 24px;
-}
-.contacts-phone:hover {
-    color: red;
 }
 .footer-languages {
     font-size: 16px;
@@ -157,7 +140,9 @@ a {
     margin-left: 24px;
     padding-bottom: 32px;
 }
-.footer-languages a:hover {
+.footer-languages a:hover,
+.contacts-phone:hover,
+.contacts-mail:hover {
     color: red;
 }
 .footer-languages__EN {
