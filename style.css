@@ -31,10 +31,9 @@ a {
 }
 .page-sidebar {
     max-width: 320px;
-    max-height: 100%;
-    background-color: #fff;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    background-color: #fff;
     font-family: 'TTLakes', sans-serif;
     font-weight: 500;
     color: #1B1C21;
@@ -65,17 +64,14 @@ a {
     margin-left: 75px;
 }
 .sidebar-list {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     margin-left: -15px;
     margin-top: 50px;
-    padding-bottom: 32px;
 }
 .sidebar-list li {
-    padding-bottom: 32px;
-}
-.sidebar-list  {
-    font-size: 16px;
-    padding-bottom: 0;
+    padding-bottom: 30px;
 }
 .sidebar-list-highlight {
     position: absolute;
@@ -91,11 +87,17 @@ a {
 .sidebar-list__item:hover {
     color: red;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: 24px;
+}
 .footer-icons {
     display: flex;
     column-gap: 16px;
-    margin-left: 24px;
-
 }
 .footer-icon-call {
     background: url("img/call.svg") no-repeat; 
@@ -112,25 +114,20 @@ a {
 }
 .contacts-mail {
     display: block;
-    font-size: 16px;
     width: 100%;
     margin-top: 16px;
-    margin-left: 24px;
 }
 .contacts-phone {
     display: block;
     font-size: 24px;
     font-weight: 700;
     margin-top: 12px;
-    margin-left: 24px;
+    margin-bottom: 35px;;
 }
 .footer-languages {
     font-size: 16px;
     font-weight: 500;
     display: flex;
-    margin-top: 30px;
-    margin-left: 24px;
-    padding-bottom: 32px;
     border: none;
 }
 .footer-languages button {
