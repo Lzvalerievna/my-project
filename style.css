@@ -98,7 +98,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     margin-top: auto;
-    height: 18vh;
+    height: 15vh;
     margin-bottom: 30px;
     margin-left: 24px;
 }
@@ -122,18 +122,14 @@ a {
 .contacts-mail {
     display: block;
     width: 100%;
-    margin-top: -20px;
 }
 .contacts-phone {
     display: block;
     font-size: 24px;
     font-weight: 700;
-    margin-top: 20px;
-  
+    margin-top: 10px;
 }
 .footer-languages {
-    font-size: 16px;
-    font-weight: 500;
     display: flex;
     border: none;
 }
