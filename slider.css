@@ -26,42 +26,9 @@ body {
     margin: 0;
     background-color: #F2F2F2;
 }
-.swiper-container {
-    max-width: 1120px;
-    margin: 0 auto;
-    overflow: hidden;
-    position:relative;
-}
 .show-more-checker {
     opacity: 0;
     position:absolute;
-}
-.show-more-button {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: 1.8%;
-    margin-top: 24px;
-}
-.show-more-checker ~ .show-more-button:after {
-    white-space: nowrap;
-    content: "Показать все";
-    color: #1B1C21;
-    font-weight: 500;
-    padding-left: 24px;
-    background: URL('img/show.png') no-repeat 0px;
-    margin-left: 1.8%;
-    margin-top: 24px;
-}
-.show-more-checker:checked ~ .show-more-button:after {
-    content: "Скрыть";
-    font-weight: 500;
-    background: URL('img/hiden.png') no-repeat 0px;
-    margin-left: 1.8%;
-    margin-top: 24px;
-}
-.show-more-checker:checked ~ .swiper-wrapper {
-    max-height: none;
 }
 .title {
     width: 100%;
@@ -76,8 +43,6 @@ body {
 
 .swiper-wrapper { 
     flex-wrap: wrap;
-    overflow: hidden;
-    max-height: 180px;
 }
 .swiper-slide {
     display: flex;
@@ -143,6 +108,45 @@ body {
     }
 }
 @media (min-width: 768px) {
+    .swiper-wrapper { 
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 180px;
+    }
+    .swiper-container {
+        max-width: 1120px;
+        margin: 0 auto;
+        overflow: hidden;
+        position:relative;
+    }
+
+    .show-more-button {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 1.8%;
+        margin-top: 24px;
+    }
+    .show-more-checker ~ .show-more-button:after {
+        white-space: nowrap;
+        content: "Показать все";
+        color: #1B1C21;
+        font-weight: 500;
+        padding-left: 24px;
+        background: URL('img/show.png') no-repeat 0px;
+        margin-left: 1.8%;
+        margin-top: 24px;
+    }
+    .show-more-checker:checked ~ .show-more-button:after {
+        content: "Скрыть";
+        font-weight: 500;
+        background: URL('img/hiden.png') no-repeat 0px;
+        margin-left: 1.8%;
+        margin-top: 24px;
+    }
+    .show-more-checker:checked ~ .swiper-wrapper {
+        max-height: none;
+    }
     .swiper-slide-brand {
         width: 97%;
     }

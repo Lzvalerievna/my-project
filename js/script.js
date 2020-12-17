@@ -1,14 +1,4 @@
 
-/*let mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  })
-  */
-
   const slider = document.querySelector('.swiper-container');
 
   let mySwiper;
@@ -28,7 +18,7 @@
     if (window.innerWidth > 768) {
       slider.dataset.mobile = 'false';
 
-      if (slider.classList.contains('swiper-container-initialized')) { 
+      if (slider.classList.contains('swiper-container-initialized')) {
       mySwiper.destroy();
     }
    }
@@ -41,4 +31,3 @@
     mobileSlider();
   });
 
- 
