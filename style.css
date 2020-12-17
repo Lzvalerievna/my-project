@@ -3,7 +3,7 @@
     src: url("fonts/TTLakes-Regular.woff") format('woff'),
     url("fonts/TTLakes-Regular.ttf") format('ttf');
     font-weight: 400;
-} 
+}
 @font-face {
     font-family: 'TTLakes';
     src: url("fonts/TTLakes-Medium.woff") format('woff'),
@@ -18,132 +18,164 @@
 }
 html {
     font-size: 16px;
+    font-weight: 400;
+    font-family: 'TTLakes', sans-serif;
+    color: #7E7E82;
 }
-a {
-    text-decoration: none;
-    color: #1B1C21;
+body {
+    margin: 0;
+    background-color: #F2F2F2;
 }
-.sidebar-icon {
+.show-more-checker {
+    opacity: 0;
+    position:absolute;
+}
+.title {
+    width: 100%;
+    background-image: linear-gradient(#F8F8F8 0%, #FFFFFF 100%);
+    border: none;
+}
+.title-header {
+    text-transform: uppercase;
+    padding: 16px;
+    letter-spacing: -0.2px;
+}
+
+.swiper-wrapper {
+    flex-wrap: wrap;
+    padding:0
+}
+.swiper-slide {
+    margin:0;
+    display: flex;
+    padding-left: 16px;
+    padding-top: 16px;
+    width: auto;
+}
+.swiper-slide-brand {
+    position: relative;
+    width: 240px;
+    height: 72px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+.swiper-slide-brand__button{
+    background: url('img/go.png') no-repeat right;
     width: 40px;
     height: 40px;
     border: none;
-    transition-duration: 0.3s;
-}
-.page-sidebar {
-    max-width: 320px;
-    height: 100vh;
-    margin: 0;
-    background-color: #fff;
-    font-family: 'TTLakes', sans-serif;
-    font-weight: 500;
-    color: #1B1C21;
-    box-shadow: 50px 0 50px 0 #F2F2F2;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-.header-sidebar {
-    display: flex;
-    margin-left: 24px;
-}
-.header-icon-close {
-    background: url("img/close.svg") no-repeat;
-    margin-top: 23px;
-    margin-right: 17px;
-}
-.header-logo {
-    background: url("img/group.png") no-repeat;
-    width: 100px;
-    height: 52px;
-    margin-top: 19px;
-    transition-duration: 0.3s;
-}
-.header-logo:hover {
-    transform: scale(1.1);
-}
-.header-icon-search {
-    background: url("img/search.svg") no-repeat;
-    margin-top: 23px;
-    margin-left: 75px;
-}
-.sidebar-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 450px;
-    list-style: none;
-    margin-left: -15px;
-    margin-top: 50px;
-}
-.sidebar-list-highlight {
     position: absolute;
-    top: 116px;
-    left: 0px;
-    background: url("img/highlight.svg") no-repeat;
-    height: 32px;
-    width: 4px;
+    top: 16px;
+    right: 17px;
 }
-.sidebar-list__item_active {
-    color: #7E7E82;
+.swiper-slide-brand__lenovo {
+    background:  #FFFFFF url('img/Lenovo.png') no-repeat 16px;
 }
-.sidebar-list__item:hover {
-    color: red;
+.swiper-slide-brand__aces {
+    background:  #FFFFFF url('img/acer.png') no-repeat 16px;
+}
+.swiper-slide-brand__apple {
+    background:  #FFFFFF url('img/apple.png') no-repeat 16px;
+}
+.swiper-slide-brand__hp {
+    background:  #FFFFFF url('img/hp.png') no-repeat 16px;
+}
+.swiper-slide-brand__sony {
+    background:  #FFFFFF url('img/sony.png') no-repeat 16px;
+}
+.swiper-slide-brand__vs {
+    background:  #FFFFFF url('img/VS.png') no-repeat 16px;
+}
+.swiper-slide-brand__bosch {
+    background:  #FFFFFF url('img/bosch.png') no-repeat 16px;
+}
+.swiper-slide-brand__samsung {
+    background:  #FFFFFF url('img/Samsung.png') no-repeat 16px;
+}
+ .swiper-pagination {
+    bottom: 0;
+}
+ .swiper-pagination-bullet {
+    background-color: #B5B6BC;
+    width: 12px;
+    height: 12px;
+}
+@media (max-width: 768px) {
+    .show-more-button {
+        display: none;
+    }
+    .swiper-wrapper {
+        flex-wrap: nowrap;
+        height: 150px;
+    }
+}
+@media (min-width: 768px) {
+    .swiper-wrapper {
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 180px;
+    }
+    .swiper-container {
+        max-width: 1120px;
+        margin: 0 auto;
+        overflow: hidden;
+        position:relative;
+    }
+
+    .show-more-button {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 1.8%;
+        margin-top: 24px;
+    }
+    .show-more-checker ~ .show-more-button:after {
+        white-space: nowrap;
+        content: "Показать все";
+        color: #1B1C21;
+        font-weight: 500;
+        padding-left: 24px;
+        background: URL('img/show.png') no-repeat 0px;
+        margin-left: 1.8%;
+        margin-top: 24px;
+    }
+    .show-more-checker:checked ~ .show-more-button:after {
+        content: "Скрыть";
+        font-weight: 500;
+        background: URL('img/hiden.png') no-repeat 0px;
+        margin-left: 1.8%;
+        margin-top: 24px;
+    }
+    .show-more-checker:checked ~ .swiper-wrapper {
+        max-height: none;
+    }
+    .swiper-slide-brand {
+        width: 97%;
+    }
+    .swiper-slide {
+        width: 30%;
+        margin: 0 1.66%;
+        padding-left: 0;
+     }
+    .title {
+        height: 56px;
+    }
+    .title-header {
+        padding-left: 24px;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+}
+@media (min-width: 1120px) {
+    .swiper-slide-brand {
+        width: 240px;
+    }
+    .swiper-slide {
+        width: 21.6%;
+     }
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 150px;
-    margin-top: auto;
-    margin-bottom: 30px;
-    margin-left: 24px;
-}
-.footer-icons {
-    display: flex;
-    column-gap: 16px;
-}
-.footer-icon-call {
-    background: url("img/call.svg") no-repeat; 
-} 
-.footer-icon-chat {
-    background: url("img/chat.svg") no-repeat; 
-}
-.footer-icon-profile {
-    background: url("img/profile.svg") no-repeat; 
-}
-.sidebar-icon:hover {
-    filter: contrast(2) brightness(2);
-    transform: scale(1.1);
-}
-.contacts-mail {
-    display: block;
-    width: 100%;
-}
-.contacts-phone {
-    display: block;
-    font-size: 24px;
-    font-weight: 700;
-}
-.footer-languages {
-    display: flex;
-    border: none;
-}
-.footer-languages button {
-    border: none;
-    background-color: #fff;;
-}
-.footer-languages button:hover,
-.contacts-phone:hover,
-.contacts-mail:hover {
-    color: red;
-}
-.footer-languages__EN {
-    margin-left: 7px;
-    margin-right: 7px;
-}
-.footer-languages__RU_active {
-    color: #7E7E82;
-}
+
+
+
