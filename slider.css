@@ -32,7 +32,7 @@ body {
 }
 .title {
     width: 100%;
-    background-image: linear-gradient(#F8F8F8 0%, #FFFFFF 100%);
+    background-image: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 100%);
     border: none;
 }
 .title-header {
@@ -53,44 +53,43 @@ body {
     width: auto;
 }
 .swiper-slide-brand {
-    position: relative;
     width: 240px;
     height: 72px;
     border: 1px solid #EAEAEA;
-    border-radius: 6px; 
+    border-radius: 6px;
 }
-.swiper-slide-brand__button{
-    background: url('img/go.png') no-repeat right;
-    width: 40px;
-    height: 40px;
-    border: none;
-    position: absolute;
-    top: 16px;
-    right: 17px;
-}
+
 .swiper-slide-brand__lenovo {
-    background:  #FFFFFF url('img/Lenovo.png') no-repeat 16px;
+    background:url('img/go.png') no-repeat 92%,
+    #FFFFFF  url('img/Lenovo.png') no-repeat 16px;
 }
 .swiper-slide-brand__aces {
-    background:  #FFFFFF url('img/acer.png') no-repeat 16px; 
+    background:  url('img/go.png') no-repeat 92%,
+  #FFFFFF url('img/acer.png') no-repeat 16px; 
 }
 .swiper-slide-brand__apple {
-    background:  #FFFFFF url('img/apple.png') no-repeat 16px; 
+    background:  url('img/go.png') no-repeat 92%,
+    #FFFFFF url('img/apple.png') no-repeat 16px; 
 }
 .swiper-slide-brand__hp {
-    background:  #FFFFFF url('img/hp.png') no-repeat 16px;
+    background:  url('img/go.png') no-repeat 92%,
+    #FFFFFF url('img/hp.png') no-repeat 16px;
 }
 .swiper-slide-brand__sony {
-    background:  #FFFFFF url('img/sony.png') no-repeat 16px;
+    background: url('img/go.png') no-repeat 92%,
+     #FFFFFF url('img/sony.png') no-repeat 16px;
 }
 .swiper-slide-brand__vs {
-    background:  #FFFFFF url('img/VS.png') no-repeat 16px;
+    background: url('img/go.png') no-repeat 92%,
+     #FFFFFF url('img/VS.png') no-repeat 16px;
 }
 .swiper-slide-brand__bosch {
-    background:  #FFFFFF url('img/bosch.png') no-repeat 16px;
+    background:  url('img/go.png') no-repeat 92%,
+    #FFFFFF url('img/bosch.png') no-repeat 16px;
 }
 .swiper-slide-brand__samsung {
-    background:  #FFFFFF url('img/Samsung.png') no-repeat 16px;
+    background:  url('img/go.png') no-repeat 92%,
+    #FFFFFF url('img/Samsung.png') no-repeat 16px;
 }
  .swiper-pagination {
     bottom: 0;
